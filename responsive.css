@@ -1,0 +1,190 @@
+@media screen and (max-width: 1024px){
+    .about-container {
+        width: 80%;
+        padding: 25px;
+        margin-top: 20px;
+    }
+    /* reduce icon size */
+    .carousel__face { 
+        width: 100px;
+        height: 100px;
+    }
+    /* reduce the space between icons with the translateZ */
+    .carousel__face:nth-child(1) {
+        transform: rotateY(  0deg) translateZ(330px); 
+    }
+    .carousel__face:nth-child(2) {
+        transform: rotateY(  40deg) translateZ(330px); 
+    }
+    .carousel__face:nth-child(3) {
+        transform: rotateY(  80deg) translateZ(330px); 
+    }
+    .carousel__face:nth-child(4) {
+        transform: rotateY(  120deg) translateZ(330px); 
+    }
+    .carousel__face:nth-child(5) {
+        transform: rotateY(  160deg) translateZ(330px); 
+    }
+    .carousel__face:nth-child(6) {
+        transform: rotateY(  200deg) translateZ(330px); 
+    }
+    .carousel__face:nth-child(7) {
+        transform: rotateY(  240deg) translateZ(330px); 
+    }
+    .carousel__face:nth-child(8) {
+        transform: rotateY(  280deg) translateZ(330px); 
+    }
+    .carousel__face:nth-child(9) {
+        transform: rotateY(  320deg) translateZ(330px); 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 20px;
+    }
+    header {
+        display: block;
+        text-align: center;
+    }
+    nav {
+        display: none;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    .menu_responsive {
+        display: flex;
+    }
+    .menu_responsive li{
+        margin: 10px;
+    }
+    .about-container {
+        width: 85%;
+        padding: 20px;
+    }
+    .skills-container {
+        perspective: 500px;
+        width: 95px;
+    }
+    .carousel__face { 
+        width: 75px;
+        height: 75px;
+    }
+    .carousel__face:nth-child(1) {
+        transform: rotateY(  0deg) translateZ(230px); 
+    }
+    .carousel__face:nth-child(2) {
+        transform: rotateY(  40deg) translateZ(230px); 
+    }
+    .carousel__face:nth-child(3) {
+        transform: rotateY(  80deg) translateZ(230px); 
+    }
+    .carousel__face:nth-child(4) {
+        transform: rotateY(  120deg) translateZ(230px); 
+    }
+    .carousel__face:nth-child(5) {
+        transform: rotateY(  160deg) translateZ(230px); 
+    }
+    .carousel__face:nth-child(6) {
+        transform: rotateY(  200deg) translateZ(230px); 
+    }
+    .carousel__face:nth-child(7) {
+        transform: rotateY(  240deg) translateZ(230px); 
+    }
+    .carousel__face:nth-child(8) {
+        transform: rotateY(  280deg) translateZ(230px); 
+    }
+    .carousel__face:nth-child(9) {
+        transform: rotateY(  320deg) translateZ(230px); 
+    }
+    .cards {
+        width: 95%;
+    }
+    #contact-main h1 {
+        margin-bottom: 20px;
+    }
+    form input, form textarea {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        margin: 20px 10px;
+    }
+    svg {
+        width: 60px;
+        height: 60px;
+    }
+    main {
+        height: calc(100vh - 150px);
+        line-height: calc(100vh - 150px);
+    }
+    .about-container {
+        width: 85%;
+        padding: 20px 15px 20px 20px;
+    }
+    #skills-main {
+        line-height: calc(100vh - 300px);
+    }
+    #skills-main h1 {
+        margin-left: -20px;
+    }
+    .skills-container {
+        width: 70px;
+    }
+    .carousel__face { 
+        width: 50px;
+        height: 50px;
+    }
+    .carousel__face:nth-child(1) {
+        transform: rotateY(  0deg) translateZ(150px); 
+    }
+    .carousel__face:nth-child(2) {
+        transform: rotateY(  40deg) translateZ(150px); 
+    }
+    .carousel__face:nth-child(3) {
+        transform: rotateY(  80deg) translateZ(150px); 
+    }
+    .carousel__face:nth-child(4) {
+        transform: rotateY(  120deg) translateZ(150px); 
+    }
+    .carousel__face:nth-child(5) {
+        transform: rotateY(  160deg) translateZ(150px); 
+    }
+    .carousel__face:nth-child(6) {
+        transform: rotateY(  200deg) translateZ(150px); 
+    }
+    .carousel__face:nth-child(7) {
+        transform: rotateY(  240deg) translateZ(150px); 
+    }
+    .carousel__face:nth-child(8) {
+        transform: rotateY(  280deg) translateZ(150px); 
+    }
+    .carousel__face:nth-child(9) {
+        transform: rotateY(  320deg) translateZ(150px); 
+    }
+    #projects-main h1 {
+        margin: 10px;
+    }
+    .cards {
+        width: 95%;
+    }
+    .text-block {
+        width: 80%;
+    }
+    #contact-main h1 {
+        margin: 10px;
+    }
+    form input, form textarea{
+        width: 85%;
+    }
+    form input[type=submit]{
+        padding: 5px;
+        margin: 10px auto;
+    }
+}
