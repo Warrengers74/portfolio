@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="responsive.css" />
-    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon.png" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/responsive.css" />
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon.png" />
     <title>Contact</title>
   </head>
   <body>
@@ -73,7 +73,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="skills.html">Skills</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a class ="active" href="contact.php">Contact</a></li>
+          <li><a class ="active" href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -82,8 +82,9 @@
       <div class="contact-container">
         <h1>Contact me</h1>
         <div class="contact-logo">
-          <a href="https://www.linkedin.com/in/warrengers74/" target="_blank"><img src="./assets/img/contact/linkedin.png" alt="linkedin icon"></a>
-        <a href="https://github.com/warrengers74" target="_blank"><img src="./assets/img/contact/github.png" alt="github icon"></a>
+          <a href="https://www.linkedin.com/in/warrengers74/" target="_blank"><img src="assets/img/contact/linkedin.png" alt="linkedin icon"></a>
+          <a href="assets/files/cv-warren.pdf" target="_blank"><img src="assets/img/contact/cv.png" alt="CV icon"></a>
+          <a href="https://github.com/warrengers74" target="_blank"><img src="assets/img/contact/github.png" alt="github icon"></a>
         </div>
         
         <form name="dataForm" id="form" method="post">
@@ -102,20 +103,7 @@
 
         </form>
 
-        <?php
-        // Si le formulaire a été soumis
-          if (isset($_POST["message"])) {
-            $message = "Ce message vous a été envoyé via la page contact du site monsite.fr
-            Nom : " . $_POST["name"] . "
-            Email : " . $_POST["email"] . "
-            Message : " . $_POST["message"];
-            $retour = mail("warrengers.dev@gmail.com", $_POST["subject"], $message, "From:contact@monsite.fr" . "\r\n" . "Reply-to:" . $_POST["email"]);
-            if ($retour) {
-              echo "<p>Your message has been sent.</p>";
-            }
-          }
-            
-        ?>
+        
         
       </div>
     </main>
@@ -123,14 +111,14 @@
     <footer>
         <nav class="menu menu_responsive">
             <ul>
-              <li><a href="index.html"><img src="./assets/img/menu/home.png" alt="home icon"></a></li>
-              <li><a href="about.html"><img src="./assets/img/menu/about.png" alt="about icon"></a></li>
-              <li><a href="skills.html"><img src="./assets/img/menu/skills.png" alt="skills icon"></a></li>
-              <li><a href="projects.html"><img src="./assets/img/menu/projects.png" alt="projects icon"></a></li>
-              <li><a class ="active" href="contact.php"><img src="./assets/img/menu/contact.png" alt="contact icon"></a></li>
+              <li><a href="index.html"><img src="assets/img/menu/home.png" alt="home icon"></a></li>
+              <li><a href="about.html"><img src="assets/img/menu/about.png" alt="about icon"></a></li>
+              <li><a href="skills.html"><img src="assets/img/menu/skills.png" alt="skills icon"></a></li>
+              <li><a href="projects.html"><img src="assets/img/menu/projects.png" alt="projects icon"></a></li>
+              <li><a class ="active" href="contact.html"><img src="assets/img/menu/contact.png" alt="contact icon"></a></li>
             </ul>
           </nav>
     </footer>
   </body>
-  <script src="script.js"></script>
+  <script src="src/script.js"></script>
 </html>

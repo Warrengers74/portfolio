@@ -121,8 +121,8 @@
         height: 60px;
     }
     main {
-        height: calc(100vh - 150px);
-        line-height: calc(100vh - 150px);
+        height: calc(100vh - 145px);
+        line-height: calc(100vh - 145px);
     }
     .about-container {
         width: 85%;

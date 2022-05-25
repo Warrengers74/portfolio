@@ -81,7 +81,7 @@ submitForm.addEventListener("submit", (e) => {
   e.preventDefault();
   if (alertName.innerHTML === "" && alertMail.innerHTML === "" && alertSubject.innerHTML === "") {
     let form = new FormData(submitForm);
-  fetch("./contact.php", {
+  fetch("src/form.php", {
     method: "POST",
     body: form, 
   });

@@ -45,8 +45,8 @@ body {
     height: 100vh;
 }
 main {
-    height: calc(100vh - 200px);
-    line-height: calc(100vh - 200px);
+    height: calc(100vh - 165px);
+    line-height: calc(100vh - 165px);
     text-align: center;
     overflow-y: auto;
     overflow-x: hidden;
@@ -232,41 +232,36 @@ a.active {
     right: 10px;
     background-size: contain;
 }
+.carousel__face img {
+    max-width: 100%;
+    max-height: 100%;
+}
 /* for rotateY, divide 360° by the number of images. translateZ is the space between the images(higher the number larger the circle) */
 .carousel__face:nth-child(1) {
-    background-image: url("./assets/img/skills/html.png");
     transform: rotateY(  0deg) translateZ(430px); 
 }
 .carousel__face:nth-child(2) {
-    background-image: url("./assets/img/skills/css.png");
     transform: rotateY(  40deg) translateZ(430px); 
 }
 .carousel__face:nth-child(3) {
-    background-image: url("./assets/img/skills/js.png");
     transform: rotateY(  80deg) translateZ(430px); 
 }
 .carousel__face:nth-child(4) {
-    background-image: url("./assets/img/skills/php.png");
     transform: rotateY(  120deg) translateZ(430px); 
 }
 .carousel__face:nth-child(5) {
-    background-image: url("./assets/img/skills/sql.png");
     transform: rotateY(  160deg) translateZ(430px); 
 }
 .carousel__face:nth-child(6) {
-    background-image: url("./assets/img/skills/wordpress.png");
     transform: rotateY(  200deg) translateZ(430px); 
 }
 .carousel__face:nth-child(7) {
-    background-image: url("./assets/img/skills/git.png");
     transform: rotateY(  240deg) translateZ(430px); 
 }
 .carousel__face:nth-child(8) {
-    background-image: url("./assets/img/skills/github.png");
     transform: rotateY(  280deg) translateZ(430px); 
 }
 .carousel__face:nth-child(9) {
-    background-image: url("./assets/img/skills/figma.png");
     transform: rotateY(  320deg) translateZ(430px); 
 }
 @keyframes rotate360 {
@@ -323,8 +318,8 @@ a.active {
     margin-bottom: -4px;
 }
 .projects-container img:hover {
-    transition: 0.5s;
     filter: none;
+    transition: 0.5s;
 }
 .projects-links {
     display: flex;
