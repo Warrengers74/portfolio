@@ -15,7 +15,7 @@ text1 &&
       i = 0;
     }
     text1.innerHTML = textArray1[i];
-  }, 8000);
+  }, 10000);
   // bottom text 
 text2 &&
   setInterval(() => {
@@ -25,7 +25,7 @@ text2 &&
       j = 0;
     }
     text2.innerHTML = textArray2[j];
-  }, 8000);
+  }, 10000);
 
 const info = document.querySelectorAll(".projects-info");
 const textBlock = document.querySelectorAll(".text-block");

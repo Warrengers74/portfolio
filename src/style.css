@@ -27,11 +27,11 @@ time, mark, audio, video {
 /* Fonts */
 @font-face {
     font-family: "Lemon Milk";
-    src: url("/assets/fonts/LEMONMILK-Regular.otf") 
+    src: url("../assets/fonts/LEMONMILK-Regular.otf");
 }
 @font-face {
     font-family: "Louis George Cafe";
-    src: url("/assets/fonts/Louis.ttf")
+    src: url("../assets/fonts/Louis.ttf") format("truetype");
 }
 
 /* Standardization */
@@ -39,14 +39,13 @@ body {
     font-family: "Louis George Cafe";
     font-size: 1.2em;
     color: #eee;
-    overflow: hidden;
     background: #001122;
-    margin: 20px 50px;
-    height: 100vh;
+    padding: 20px 50px;
+    margin: 0;
 }
 main {
-    height: calc(100vh - 165px);
-    line-height: calc(100vh - 165px);
+    height: calc(100vh - 124px);
+    line-height: calc(100vh - 124px);
     text-align: center;
     overflow-y: auto;
     overflow-x: hidden;
@@ -120,12 +119,12 @@ a.active {
 .slide-left {
     position: relative;
     right: -100%;
-    animation: slideInfiniteLeft 8s infinite linear;
+    animation: slideInfiniteLeft 10s infinite linear;
 }
 .slide-right {
     position: relative;
     left: -100%;
-    animation: slideInfiniteRight 8s infinite linear;
+    animation: slideInfiniteRight 10s infinite linear;
 }
 @keyframes slideInfiniteLeft {
     from {right:-100%}
